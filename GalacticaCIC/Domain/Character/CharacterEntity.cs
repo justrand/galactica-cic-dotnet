@@ -16,11 +16,11 @@ namespace GalacticaCIC.Domain.Character
         
         public CharacterType Type { get; set; }
         
-        public int InheritanceAdmiral { get; set; }
+        public int? InheritanceAdmiral { get; set; }
         
-        public int InheritanceCag { get; set; }
+        public int? InheritanceCag { get; set; }
         
-        public int InheritancePresident { get; set; }
+        public int? InheritancePresident { get; set; }
         
         public AbilityEntity OncePerTurnAbility { get; set; }
         
