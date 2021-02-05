@@ -1,0 +1,2 @@
+# Galactica CIC
+This is a C# web api backend project for the galactica cic card drafting system. This is mainly to try out server side programming with something else than Microsoft SQL Server and to perhaps later creater frontends for this. 
