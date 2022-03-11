@@ -1,9 +1,8 @@
-namespace GalacticaCIC.Domain.Character
+namespace GalacticaCIC.Domain.Character;
+
+public enum AbilityType
 {
-    public enum AbilityType
-    {
-        OncePerTurn = 1,
-        OncePerGame = 2,
-        Weakness = 3
-    }
+    OncePerTurn = 1,
+    OncePerGame = 2,
+    Weakness = 3
 }

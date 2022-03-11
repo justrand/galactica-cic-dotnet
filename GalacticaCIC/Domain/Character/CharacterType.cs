@@ -1,11 +1,9 @@
-namespace GalacticaCIC.Domain.Character
+namespace GalacticaCIC.Domain.Character;
+public enum CharacterType
 {
-    public enum CharacterType
-    {
-        PoliticalLeader = 1,
-        MilitaryLeader = 2,
-        Pilot = 3,
-        CylonLeader = 4,
-        Support = 5
-    }
+    PoliticalLeader = 1,
+    MilitaryLeader = 2,
+    Pilot = 3,
+    CylonLeader = 4,
+    Support = 5
 }

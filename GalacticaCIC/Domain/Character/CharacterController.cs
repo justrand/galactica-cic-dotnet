@@ -1,21 +1,17 @@
-using GalacticaCIC.Common;
-using Microsoft.AspNetCore.Mvc;
+namespace GalacticaCIC.Domain.Character;
 
-namespace GalacticaCIC.Domain.Character
+public class CharacterController: Controller
 {
-    public class CharacterController: Controller
+    private DataContext _dataContext;
+    
+    public CharacterController(DataContext dataContext)
     {
-        private DataContext _dataContext;
-        
-        public CharacterController(DataContext dataContext)
-        {
-            _dataContext = dataContext;
-        }
-
-        public ActionResult GetCharacters()
-        {
-            return Ok();
-        }
-        
+        _dataContext = dataContext;
     }
+
+    public ActionResult GetCharacters()
+    {
+        return Ok();
+    }
+    
 }

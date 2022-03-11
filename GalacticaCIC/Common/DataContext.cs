@@ -1,13 +1,11 @@
 using GalacticaCIC.Domain.Character;
-using Microsoft.EntityFrameworkCore;
 
-namespace GalacticaCIC.Common
+namespace GalacticaCIC.Common;
+
+public class DataContext: DbContext
 {
-    public class DataContext: DbContext
-    {
-        public DataContext(DbContextOptions<DataContext> options): base(options) { }
+    public DataContext(DbContextOptions<DataContext> options): base(options) { }
 
-        public DbSet<CharacterEntity> Characters { get; set; } = null!;
+    public DbSet<CharacterEntity> Characters { get; set; } = null!;
 
-    }
 }
