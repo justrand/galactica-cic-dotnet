@@ -1,3 +1,5 @@
+using GalacticaCIC.Json;
+
 namespace GalacticaCIC.Domain.Character;
 
 public class CharacterController: Controller
@@ -13,5 +15,10 @@ public class CharacterController: Controller
     {
         return Ok();
     }
-    
+
+    [HttpPost("migratedata")]
+    public async Task<ActionResult> MigrateData([FromBody] List<CharacterJson> characterJson)
+    {
+        return Ok();
+    }
 }

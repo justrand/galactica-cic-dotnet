@@ -7,5 +7,6 @@ public enum SkillType
     Tactics = 3,
     Piloting = 4,
     Engineering = 5,
-    Treachery = 6
+    Treachery = 6,
+    Unknown = 7
 }

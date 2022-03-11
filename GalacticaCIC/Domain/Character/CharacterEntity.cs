@@ -27,9 +27,11 @@ public class CharacterEntity
 
     public int LoyaltyWeight { get; set; } = 1;
     
-    public CharacterEntity AlternateVersion { get; set; } = null;
+    public CharacterEntity? AlternateVersion { get; set; } = null;
 
     public List<SkillSetEntity> Skills { get; set; } = new List<SkillSetEntity>();
     
     public ExpansionEntity Expansion { get; set; }
+    
+    public string StartLocation { get; set; }
 }
